@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#fff7fb">
-<meta name="description" content="チェキカウントは、チェキの枚数・売上・バック・精算状況などをまとめて管理できるiPhoneアプリです。App Storeで配信中。">
+<meta name="description" content="チェキカウントは、チェキの枚数・売上・バック・精算状況などをまとめて管理できるiPhoneアプリです。売上報告のLINE共有、ウィジェット、バックアップ・iCloud同期にも対応。App Storeで配信中。">
 <title>チェキカウント｜公式サイト</title>
 <link rel="icon" href="./favicon-32.png">
 <link rel="apple-touch-icon" href="./apple-touch-icon.png">
@@ -24,6 +24,7 @@
 .section{width:min(1120px,calc(100% - 32px));margin:72px auto 0;scroll-margin-top:100px}.section-head{max-width:760px;margin-bottom:28px}.eyebrow{margin:0 0 8px;color:var(--pink);font-size:12px;font-weight:900;letter-spacing:.2em}.section h2{margin:0;font-size:clamp(30px,5vw,46px);letter-spacing:-.025em}.section-head p:last-child{margin:10px 0 0;color:var(--muted)}
 .features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature-card{padding:25px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.88);box-shadow:0 10px 32px rgba(110,54,84,.05)}.feature-icon{width:46px;height:46px;display:grid;place-items:center;margin-bottom:16px;border-radius:14px;background:linear-gradient(145deg,#ffe2ef,#fff0df);color:var(--pink);font-size:22px;font-weight:900}.feature-card h3{margin:0 0 7px;font-size:18px}.feature-card p{margin:0;color:var(--muted);font-size:14px}
 .release{margin-top:74px;padding:42px;border-radius:30px;background:linear-gradient(135deg,#ff4a9f 0%,#ff7bb7 50%,#ffb587 100%);color:#fff;box-shadow:0 20px 54px rgba(220,52,134,.20)}.release-grid{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}.release h2{margin:0;font-size:clamp(28px,4.5vw,42px)}.release p{margin:9px 0 0;color:rgba(255,255,255,.88)}.release .button-appstore{min-width:240px;border-color:#fff;box-shadow:0 13px 30px rgba(88,28,60,.18)}
+.tag{display:inline-block;margin-left:6px;padding:2px 8px;border-radius:999px;background:var(--pink-soft);color:var(--pink-dark);font-size:11px;font-weight:900;vertical-align:middle}.new-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:0;padding:0;list-style:none}.new-list li{padding:16px 18px;border:1px solid var(--line);border-radius:18px;background:#fff;font-size:14px;color:var(--ink)}.new-list li strong{display:block;margin-bottom:2px;font-size:15px}.new-list li span{color:var(--muted)}.pro-box{padding:30px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(140deg,#fff,#fff3f9);box-shadow:var(--shadow)}.pro-box .features-grid{margin-top:6px}.free-note{margin:18px 0 0;padding:14px 18px;border-radius:16px;background:var(--green-bg);color:var(--green);font-size:14px;font-weight:700}@media(max-width:560px){.new-list{grid-template-columns:1fr}.pro-box{padding:20px}}
 .links{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.link-card{display:block;padding:24px;border:1px solid var(--line);border-radius:20px;background:#fff;text-decoration:none}.link-card strong{display:block;margin-bottom:5px}.link-card span{color:var(--muted);font-size:14px}
 .footer{width:min(1120px,calc(100% - 32px));margin:70px auto 0;padding:28px 0 calc(34px + env(safe-area-inset-bottom));border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:#9990a0;font-size:12px}.footer-links{display:flex;gap:16px}.footer a{text-decoration:none}
 @media(max-width:820px){.nav{display:none}.hero{margin-top:22px;border-radius:26px}.hero-inner{grid-template-columns:1fr;gap:30px;padding:24px}.hero-icon-wrap{min-height:270px}.hero-icon{width:min(220px,62%)}.features-grid{grid-template-columns:1fr 1fr}.release{padding:28px}.release-grid{grid-template-columns:1fr}.release .button-appstore{width:fit-content}}
@@ -37,7 +38,7 @@
     <div><strong>チェキカウント</strong><span>OFFICIAL SITE</span></div>
   </a>
   <nav class="nav" aria-label="メインメニュー">
-    <a href="#features">機能</a><a href="#download">App Store</a><a href="./support.html">サポート</a><a href="./privacy.html">プライバシー</a>
+    <a href="#features">機能</a><a href="#whats-new">新機能</a><a href="#pro">Pro</a><a href="#download">App Store</a><a href="./support.html">サポート</a><a href="./privacy.html">プライバシー</a>
   </nav>
 </header>
 
@@ -48,15 +49,15 @@
       <img class="hero-icon" src="./chekicount-app-icon.png" alt="チェキカウント">
     </div>
     <div class="hero-copy">
-      <div class="status">App Storeで配信中</div>
+      <div class="status">v1.3 配信中</div>
       <h1>チェキカウント</h1>
       <p class="lead">チェキの枚数・売上・精算を、ひと目で管理。</p>
-      <p class="description">チェキやツーショット、特典会などの記録をまとめて管理できるiPhoneアプリ。枚数・売上・バック・精算状況・履歴を、シンプルに確認できます。</p>
+      <p class="description">チェキやツーショット、特典会などの記録をまとめて管理できるiPhoneアプリ。枚数・売上・バック・精算状況・履歴を、シンプルに確認できます。今日の売上はLINEでそのまま報告。バックアップとiCloud同期で、機種変更も安心です。</p>
       <div class="hero-actions">
         <a class="button button-appstore" href="https://apps.apple.com/jp/app/%E3%83%81%E3%82%A7%E3%82%AD%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88/id6811438365" target="_blank" rel="noopener noreferrer"><span class="apple"></span>App Storeで見る</a>
         <a class="button button-secondary" href="./support.html">サポート</a>
       </div>
-      <div class="mini-note">iPhone対応・App Storeで配信中</div>
+      <div class="mini-note">iPhone対応・無料ではじめられます（一部機能はPro）</div>
     </div>
   </div>
 </section>
@@ -68,12 +69,49 @@
     <p>日々のチェキ活動に必要な情報を、見やすく整理して確認できます。</p>
   </div>
   <div class="features-grid">
-    <article class="feature-card"><div class="feature-icon">枚</div><h3>枚数管理</h3><p>チェキやツーショットなど、日ごとの枚数を記録できます。</p></article>
-    <article class="feature-card"><div class="feature-icon">¥</div><h3>売上管理</h3><p>記録した内容から、売上を分かりやすく確認できます。</p></article>
-    <article class="feature-card"><div class="feature-icon">％</div><h3>バック管理</h3><p>報酬やバックの状況をまとめて管理できます。</p></article>
-    <article class="feature-card"><div class="feature-icon">✓</div><h3>精算状況</h3><p>未精算・精算済みなどの状態を整理して確認できます。</p></article>
-    <article class="feature-card"><div class="feature-icon">↻</div><h3>履歴確認</h3><p>過去の記録を振り返り、活動データを確認できます。</p></article>
-    <article class="feature-card"><div class="feature-icon">日</div><h3>カレンダー</h3><p>日付ごとに記録を整理し、活動の流れを確認できます。</p></article>
+    <article class="feature-card"><div class="feature-icon">枚</div><h3>枚数・売上の記録</h3><p>1部・2部ごとに枚数と販売価格を入力するだけ。売上は自動で計算されます。</p></article>
+    <article class="feature-card"><div class="feature-icon">％</div><h3>バック自動計算</h3><p>バック率（％）でも、1枚あたりの固定額でも。部ごとに設定できます。</p></article>
+    <article class="feature-card"><div class="feature-icon">✓</div><h3>精算管理</h3><p>未精算・精算済みをひと目で確認。期間やメンバーを選んでまとめて精算できます。</p></article>
+    <article class="feature-card"><div class="feature-icon">日</div><h3>カレンダー・履歴</h3><p>履歴は月ごとに表示。月へのジャンプ、未精算の絞り込み、キーワード検索で過去の記録もすぐ見つかります。</p></article>
+    <article class="feature-card"><div class="feature-icon">✉</div><h3>売上報告<span class="tag">NEW</span></h3><p>今日の売上を報告文に自動でまとめて、LINEで送信。文章のコピーもできます。</p></article>
+    <article class="feature-card"><div class="feature-icon">□</div><h3>ウィジェット<span class="tag">NEW</span></h3><p>ホーム画面・ロック画面で、今日の枚数・バック・未精算額を確認できます。</p></article>
+    <article class="feature-card"><div class="feature-icon">☁</div><h3>バックアップ・iCloud同期<span class="tag">NEW</span></h3><p>データをファイルに保存して機種変更に。iCloud同期も無料で使えます。</p></article>
+    <article class="feature-card"><div class="feature-icon">人</div><h3>メンバー・会場の記録<span class="tag">NEW</span></h3><p>メンバー名・イベント名・会場名を売上ごとに記録。過去の入力から候補を選べます。</p></article>
+    <article class="feature-card"><div class="feature-icon">運</div><h3>運営売上・経費</h3><p>メンバー売上とは別に、現金・電子決済の売上と経費、差引を管理できます。</p></article>
+  </div>
+</section>
+
+<section class="section" id="whats-new">
+  <div class="section-head">
+    <p class="eyebrow">WHAT'S NEW</p>
+    <h2>バージョン1.3の新機能</h2>
+    <p>現場での使いやすさと、データの安心を強化しました。</p>
+  </div>
+  <ul class="new-list">
+    <li><strong>売上報告をLINEで送信</strong><span>報告文を自動作成。送る前に自由に編集できます。</span></li>
+    <li><strong>バックアップ・iCloud同期</strong><span>ファイル保存と、無料のiCloud同期に対応しました。</span></li>
+    <li><strong>ウィジェット</strong><span>ホーム画面・ロック画面で今日の数字を確認。</span></li>
+    <li><strong>「記録」タブ</strong><span>カレンダーと履歴をひとつに。履歴は月ごとに見やすく。</span></li>
+    <li><strong>メンバー名の記録</strong><span>精算や年間の集計をメンバーごとに確認できます。</span></li>
+    <li><strong>「元に戻す」</strong><span>削除した売上をすぐに復元できます。</span></li>
+  </ul>
+</section>
+
+<section class="section" id="pro">
+  <div class="section-head">
+    <p class="eyebrow">CHEKI COUNT PRO</p>
+    <h2>精算・確定申告・分析を<br>まとめてラクに。</h2>
+    <p>月額プラン・年額プランからお選びいただけます。</p>
+  </div>
+  <div class="pro-box">
+    <div class="features-grid">
+      <article class="feature-card"><div class="feature-icon">↗</div><h3>グラフ・ランキング</h3><p>月別の売上・バック・枚数の推移と、よく売れたイベント・会場・メンバーがわかります。</p></article>
+      <article class="feature-card"><div class="feature-icon">年</div><h3>年間集計</h3><p>1年分の枚数・売上・バック・未精算を月別に確認できます。</p></article>
+      <article class="feature-card"><div class="feature-icon">PDF</div><h3>月次精算レポート</h3><p>1か月分の売上・バック・精算状況をPDFに。運営売上・経費も掲載できます。</p></article>
+      <article class="feature-card"><div class="feature-icon">申</div><h3>確定申告用 年間バック明細</h3><p>月別合計と受け取り日ごとの明細をPDFに。メンバーごとにも作成できます。</p></article>
+      <article class="feature-card"><div class="feature-icon">CSV</div><h3>CSV書き出し</h3><p>全履歴・年間集計・運営収支を、Excelで開ける形式で保存できます。</p></article>
+    </div>
+    <p class="free-note">売上の記録・バック計算・精算・カレンダー・履歴・運営売上・売上報告・バックアップ・iCloud同期・ウィジェットは、Proにしなくても無料で使えます。</p>
   </div>
 </section>
 
